@@ -32,6 +32,11 @@ Step 2: {"textbox","password","button"} // In step 2 it need auxilary functions 
 Step 3: {validate:func(){$(this).value !=='root';}, validate:func(){return false;}, onclick:func(){call support function to return value to backend.}}
 Step 4: Layer_0 { Nucleus.Transform(Step 1).Transform(Step 2).Transform(Step 3); } Become the UI layer
 
+Rule 3-1:
+For Layers there should be a parent Layer Id, in which keeps track of what level of the layer belongs to.
+Layer 0 - Foundation 
+Layer 1 - Menu
+Layer 2+ Each app triggers what function
 
 ---
 It's possible to assign ID, instead natural cardinality, just add a layer right after the declarartion. Nucleaus.Transform(assignId) so indexed value convereted to keyed value.
