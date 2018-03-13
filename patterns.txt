@@ -33,4 +33,5 @@ Step 3: {validate:func(){$(this).value !=='root';}, validate:func(){return false
 Step 4: Layer_0 { Nucleus.Transform(Step 1).Transform(Step 2).Transform(Step 3); } Become the UI layer
 
 
-
+---
+It's possible to assign ID, instead natural cardinality, just add a layer right after the declarartion. Nucleaus.Transform(assignId) so indexed value convereted to keyed value.
