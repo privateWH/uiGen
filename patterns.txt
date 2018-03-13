@@ -1,0 +1,36 @@
+Rule 1: No Ids.
+
+<group>
+   <label>Username</label><input type="text">
+<group>
+Instead of looking for Id. The matching should done during development. meaning when declaring <label>Username</label>, When that's done, the semantic is concrete.
+In communicating to the backend:
+document.getElementByTag('group').findChildNodes('input');
+
+
+
+Rule 2: Tag before class, all are classes. Ignore html semantic tags, create semantic site separately. (If you want do it right, do at it's best by semantic crawlers)
+the meaning of the UI layout group is done in development, therefore don't care what the browser thinks.
+
+<group>
+  <label>Username</label><input type="text" class="error-1234">
+<group>
+
+<error-1234>
+The user name you picked already exists!
+</error-1234>
+
+Rule 3:
+To support Rule 1, 
+group_i{label:"Username",input:"text"}
+group_j{label:"Password",input:"password"}
+group_k{label:"Login",input:"button"}
+
+Starts with:
+Step 1: {"Username","Password","Login"}
+Step 2: {"textbox","password","button"} // In step 2 it need auxilary functions such as getValue() and setValue(). Ignore reset
+Step 3: {validate:func(){$(this).value !=='root';}, validate:func(){return false;}, onclick:func(){call support function to return value to backend.}}
+Step 4: Layer_0 { Nucleus.Transform(Step 1).Transform(Step 2).Transform(Step 3); } Become the UI layer
+
+
+
