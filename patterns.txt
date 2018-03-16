@@ -41,4 +41,4 @@ Layer 2+ Each app triggers what function
 ---
 It's possible to assign ID, instead natural cardinality, just add a layer right after the declarartion. Nucleaus.Transform(assignId) so indexed value convereted to keyed value.
 
-The Idea about Rules, they are meant to be broken, for example there are few examples in which the scenario might need to alter the rule: (Rule 1 Mututally Exclusive From Rule 2, Rule 3 Depend on Rule 2 but Not Rule 1, Rule 3 If Rule 1 and Rule 2 Does not Apply)
+The Idea about Rules, they are meant to be broken, for example there are few examples in which the scenario might need to alter the rule: (Rule 1 Mututally Exclusive From Rule 2, Rule 3 Depend on Rule 2 but Not Rule 1, Rule 3 If Rule 1 and Rule 2 Does not Apply). This is a demonstration of inifinit paths, where rules work in one dimension but failed in other scenario.
