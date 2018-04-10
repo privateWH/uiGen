@@ -7,4 +7,7 @@ However a good controller is hard because:
 1. State maintaince.
 2. Code between application logic and conditional execution of the View.
 
+Loader (Lazy or no) should be the beginning of the State.
+
+
 Consider the scenario (2).
