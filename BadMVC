@@ -1,0 +1,10 @@
+When work with UI on the Web. MVC doesn't fit well. because
+for the View (a combination of CSS, HTML and Javascript).
+and Model (a combination of embedded HTML input or pure JSON object) can be complicated.
+
+The one thing that seems to be consistent is the Controller. 
+However a good controller is hard because: 
+1. State maintaince.
+2. Code between application logic and conditional execution of the View.
+
+Consider the scenario (2).
